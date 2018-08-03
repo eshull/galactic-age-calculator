@@ -16,6 +16,8 @@ export class Dob {
   timeElapsed(){
     let past = this.birthday()
     let present = this.now()
-    return (past + present)
+    let difference = (present.getTime() - past.getTime())
+    difference = (difference/31556900000).toFixed(3);
+    return difference
   }
 }

@@ -15,20 +15,18 @@ describe ('Dob', function() {
 
   it ('should make a new birthday based on user input', function() {
     let dob = new Dob("05 October 2011 14:48 UTC");
-    console.log(dob);
     expect(dob.birthday()).toEqual(sampleBirthday);
   });
 
   it ('should make a new instance of time', function() {
-    let presentDate = new Dob();
-    console.log(presentDate);
-    expect(presentDate.now()).toEqual(sampleNow);
+    let dob = new Dob("05 October 2011 14:48 UTC");
+    expect(dob.now()).toEqual(sampleNow);
   });
 
   it ('should find the elapsed time between two dates', function() {
     birthdate = new Dob("05 October 2011 14:48 UTC");
-    console.log(birthdate.birthday());
-    expect(birthdate.timeElapsed()).toEqual(sampleBirthday + sampleNow);
+    console.log(birthdate.timeElapsed());
+    expect(birthdate.timeElapsed()).toEqual(((sampleNow.getTime() - sampleBirthday.getTime())/31556900000).toFixed(3));
   });
 
 });
