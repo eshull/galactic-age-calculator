@@ -21,6 +21,6 @@ describe ('Dob', function() {
   it ('should make a new instance of time', function() {
     let presentDate = new Dob();
     console.log(presentDate);
-    expect(presentDate.now()).toEqual(sample);
+    expect(presentDate.now()).toEqual(sampleNow);
   });
 });
