@@ -8,13 +8,13 @@ describe ('Dob', function() {
 
   beforeEach(function() {
     birthdate = new Dob();
-    sampleBirthday = new Date("September 13, 2000 00:00:00");
+    sampleBirthday = new Date("05 October 2011 14:48 UTC");
     sampleNow = new Date()
   });
 
 
   it ('should make a new birthday based on user input', function() {
-    let dob = new Dob("September 13, 2000 00:00:00");
+    let dob = new Dob("05 October 2011 14:48 UTC");
     console.log(dob);
     expect(dob.birthday()).toEqual(sampleBirthday);
   });
@@ -26,7 +26,8 @@ describe ('Dob', function() {
   });
 
   it ('should find the elapsed time between two dates', function() {
-    
+    birthdate = new Dob("05 October 2011 14:48 UTC");
+    console.log(birthdate.birthday());
     expect(birthdate.timeElapsed()).toEqual(sampleBirthday + sampleNow);
   });
 
