@@ -43,12 +43,14 @@ export class Dob {
 
   lifeExpectancy(sex){
     let age = Math.floor(this.timeElapsed());
-    expectancy = (76 - age)
+    let expectancy = 76
+    let yearsLeft = expectancy - age
+
     if (sex == "female") {
-      age = age + 6
-      return age
+      yearsLeft = yearsLeft + 6
+      return yearsLeft
     } else {
-      return expectancy
+      return yearsLeft
     }
   }
 
