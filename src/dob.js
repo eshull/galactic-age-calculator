@@ -31,5 +31,10 @@ export class Dob {
     return yearsConversion
   }
 
+  marsYears(){
+    let yearsConversion = ((this.timeElapsed()) * 1.88)
+    return yearsConversion
+  }
+
 
 }
