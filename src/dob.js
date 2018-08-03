@@ -20,4 +20,9 @@ export class Dob {
     difference = (difference/31556900000).toFixed(3);
     return difference
   }
+
+  mercuryYears(){
+    let yearsConversion = ((this.timeElapsed()) * .24)
+    return yearsConversion
+  }
 }
