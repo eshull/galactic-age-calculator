@@ -25,4 +25,11 @@ export class Dob {
     let yearsConversion = ((this.timeElapsed()) * .24)
     return yearsConversion
   }
+
+  venusYears(){
+    let yearsConversion = ((this.timeElapsed()) * .62)
+    return yearsConversion
+  }
+
+
 }

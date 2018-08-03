@@ -31,5 +31,8 @@ describe ('Dob', function() {
   it ('should find the amount of years old in Venus years', function() {
     expect(birthdate.venusYears()).toEqual(6.829 * .62);
   });
+  it ('should find the amount of years old in Venus years', function() {
+    expect(birthdate.venusYears()).toEqual(6.829 * .62);1.88
+  });
 
 });
