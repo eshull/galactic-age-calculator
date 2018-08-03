@@ -12,4 +12,10 @@ export class Dob {
     let birthday = new Date(this.birthdate)
     return birthday
   }
+
+  timeElapsed(){
+    let past = this.birthday()
+    let present = this.now()
+    return (past + present)
+  }
 }

@@ -18,9 +18,16 @@ describe ('Dob', function() {
     console.log(dob);
     expect(dob.birthday()).toEqual(sampleBirthday);
   });
+
   it ('should make a new instance of time', function() {
     let presentDate = new Dob();
     console.log(presentDate);
     expect(presentDate.now()).toEqual(sampleNow);
   });
+
+  it ('should find the elapsed time between two dates', function() {
+    
+    expect(birthdate.timeElapsed()).toEqual(sampleBirthday + sampleNow);
+  });
+
 });
