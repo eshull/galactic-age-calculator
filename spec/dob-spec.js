@@ -15,6 +15,7 @@ describe ('Dob', function() {
   it ('should make a new birthday based on user input', function() {
     // sample = "Date 2000-09-13T07:00:00.000Z";
     let dob = new Dob("September 13, 2000 00:00:00");
-    expect(dob.getFullYear()).toEqual(sample);
+    console.log(dob);
+    expect(dob.birthday()).toEqual(sample);
   });
 });

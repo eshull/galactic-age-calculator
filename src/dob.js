@@ -7,4 +7,9 @@ export class Dob {
     let now = new Date();
     return now;
   }
+
+  birthday(){
+    let birthday = new Date(this.birthdate)
+    return birthday
+  }
 }
