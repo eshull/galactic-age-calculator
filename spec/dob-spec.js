@@ -28,11 +28,17 @@ describe ('Dob', function() {
   it ('should find the amount of years old in Mercury years', function() {
     expect(birthdate.mercuryYears()).toEqual(6.829 * .24);
   });
+
   it ('should find the amount of years old in Venus years', function() {
     expect(birthdate.venusYears()).toEqual(6.829 * .62);
   });
-  it ('should find the amount of years old in Venus years', function() {
+
+  it ('should find the amount of years old in Mars years', function() {
     expect(birthdate.marsYears()).toEqual(6.829 * 1.88);
+  });
+
+  it ('should find the amount of years old in Jupiter years', function() {
+    expect(birthdate.jupiterYears()).toEqual(6.829 * 11.86);
   });
 
 });
