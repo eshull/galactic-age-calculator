@@ -1,4 +1,4 @@
-import {Counter} from './counter';
+import {Dob} from './dob';
 // import './styles.css';
 // import $ from 'jquery';
 // import 'bootstrap';

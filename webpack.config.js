@@ -17,7 +17,7 @@ module.exports = {
     new UglifyJsPlugin({ sourceMap: true }),
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: 'galactic_age_counter',
+      title: 'dob',
       template: './src/index.html',
       inject: 'body'
     })
