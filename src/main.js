@@ -15,8 +15,10 @@ $(document).ready(function() {
     let minute = $('#userInput').find('input[name="minutes"]').val();
     let second = $('#userInput').find('input[name="seconds"]').val();
     console.log(year + month + day);
-    let dob = new Dob(year + ", " + month + ", " + day + ", " + hour + ", " + minute + ", " + second);
+    let dob = new Dob(parseInt(year) + ", " + parseInt(month) + ", " + parseInt(day) + ", " + parseInt(hour) + ", " + parseInt(minute + 0) + ", " + parseInt(second + 0));
     console.log(dob);
+    let age = dob.birthday();
+    console.log(age);
 
 
   });
