@@ -10,7 +10,7 @@ export class Dob {
 
   birthday(){
     let birthday = new Date(this.birthdate)
-    return birthday
+    return birthday;
   }
 
   timeElapsed(){
@@ -18,28 +18,38 @@ export class Dob {
     let present = this.now()
     let difference = (present.getTime() - past.getTime())
     difference = (difference/31556900000).toFixed(3);
-    return difference
+    return difference;
   }
 
   mercuryYears(){
     let yearsConversion = ((this.timeElapsed()) * .24)
-    return yearsConversion
+    return yearsConversion;
   }
 
   venusYears(){
     let yearsConversion = ((this.timeElapsed()) * .62)
-    return yearsConversion
+    return yearsConversion;
   }
 
   marsYears(){
     let yearsConversion = ((this.timeElapsed()) * 1.88)
-    return yearsConversion
+    return yearsConversion;
   }
 
   jupiterYears(){
     let yearsConversion = ((this.timeElapsed()) * 11.86)
-    return yearsConversion
+    return yearsConversion;
   }
 
+  lifeExpectancy(sex){
+    let age = Math.floor(this.timeElapsed());
+    expectancy = (76 - age)
+    if (sex == "female") {
+      age = age + 6
+      return age
+    } else {
+      return expectancy
+    }
+  }
 
 }

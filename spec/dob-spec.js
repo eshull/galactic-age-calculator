@@ -42,7 +42,7 @@ describe ('Dob', function() {
   });
 
   it ('should determine life expectancy based on users age and sex', function() {
-    expect(birthdate.lifeExpectancy()).toEqual();
+    expect(birthdate.lifeExpectancy("female")).toEqual(76);
   });
 
 });
