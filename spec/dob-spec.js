@@ -41,4 +41,8 @@ describe ('Dob', function() {
     expect(birthdate.jupiterYears()).toEqual(6.829 * 11.86);
   });
 
+  it ('should determine life expectancy based on users age and sex', function() {
+    expect(birthdate.lifeExpectancy()).toEqual();
+  });
+
 });
