@@ -49,4 +49,8 @@ describe ('Dob', function() {
     expect(birthdate.lifeExpectancy("male")).toEqual(70);
   });
 
+  it ('should return amount of years over life expectancy if older than life expectancy', function() {
+    expect(birthdate.lifeExpectancy("male")).toEqual(70);
+  });
+
 });

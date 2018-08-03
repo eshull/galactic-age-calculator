@@ -47,10 +47,21 @@ export class Dob {
     let yearsLeft = expectancy - age
 
     if (sex == "female") {
-      yearsLeft = yearsLeft + 6
-      return yearsLeft
-    } else {
-      return yearsLeft
+      if (yearsLeft < 0) {
+        return age - (expectancy + 6)
+      } else {
+        return yearsLeft = yearsLeft + 6
+      }
+    } else if (sex == "male") {
+      if (yearsLeft < 0) {
+        return age - expectancy
+      } else {
+        return yearsLeft
+      }
+    }
+
+    if (yearsLeft < 0) {
+      return age - expectancy
     }
   }
 
