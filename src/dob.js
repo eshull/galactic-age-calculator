@@ -59,10 +59,6 @@ export class Dob {
         return yearsLeft
       }
     }
-
-    if (yearsLeft < 0) {
-      return age - expectancy
-    }
   }
 
 }

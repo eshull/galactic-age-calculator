@@ -51,13 +51,11 @@ describe ('Dob', function() {
 
   it ('should return amount of years over life expectancy if older than life expectancy for male input', function() {
     birthdate = new Dob("05 October 1911 14:48 UTC");
-    console.log(Math.floor(birthdate.timeElapsed()));
     expect(birthdate.lifeExpectancy("male")).toEqual(30);
   });
 
   it ('should return amount of years over life expectancy if older than life expectancy for female input', function() {
     birthdate = new Dob("05 October 1911 14:48 UTC");
-    console.log(Math.floor(birthdate.timeElapsed()));
     expect(birthdate.lifeExpectancy("female")).toEqual(24);
   });
 
