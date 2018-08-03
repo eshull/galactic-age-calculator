@@ -36,5 +36,10 @@ export class Dob {
     return yearsConversion
   }
 
+  jupiterYears(){
+    let yearsConversion = ((this.timeElapsed()) * 11.86)
+    return yearsConversion
+  }
+
 
 }
