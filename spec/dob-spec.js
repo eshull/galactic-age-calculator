@@ -45,4 +45,8 @@ describe ('Dob', function() {
     expect(birthdate.lifeExpectancy("female")).toEqual(76);
   });
 
+  it ('should determine life expectancy based on users age and sex', function() {
+    expect(birthdate.lifeExpectancy("male")).toEqual(70);
+  });
+
 });
